@@ -2,3 +2,5 @@
 .env
 .glitch-assets
 node_modules/
+.replit
+.baberlrc

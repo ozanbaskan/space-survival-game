@@ -1,4 +1,3 @@
-
 const Rock = require("./game-server/game-objects/rock.js")
 
 const express = require('express');
