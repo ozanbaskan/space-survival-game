@@ -1,0 +1,42 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Courier New', Courier, monospace;
+}
+body {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  height:100vh;
+  width:100vw;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+
+code {
+  background: #d0d0d5;
+}
+
+canvas {
+  margin: auto;
+  position:absolute;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 800px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+h3 {
+  position:relative;
+  top:335px;
+  text-align:center;
+}

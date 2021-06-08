@@ -9,24 +9,23 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../public/style.css" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="../public/style_index.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <h1>Secure Real Time Multiplayer Game</h1>
     </header>
-    <hr style="margin: 25px" />
+    <hr/>
     <div class="container">
-      <canvas 
-        ref="game"
-        id="game-window" 
-        width="640" 
-        height="480"
-      >
-      </canvas>
+     <form action="/room" method="post" id="create_game">
+     <input type="text" placeholder="Game name between 4-8 characters" name="gameName" required></input>
+     <br><br>
+     <input type="text" placeholder="Player name between 3-9 characters" name="playerName" required></input>
+     <br><br>
+     <input type="submit" value="Join or Create"></input>
+     </form>
     </div>
   </body>
-  <script src="../public/game.mjs" type="module"></script>
 </html>
